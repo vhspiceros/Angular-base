@@ -1,0 +1,17 @@
+<p>covid-stats works!</p>
+<table>
+  <thead>
+    <th>Pais</th>
+    <th>Infectados</th>
+    <th>Status</th>
+    <th>Date</th>
+  </thead>
+  <tbody>
+    <tr role="row" *ngFor="let ct of this.Covidstats">
+      <td>{{ct.Country}}</td>
+      <td>{{ct.Cases}}</td>
+      <td>{{ct.Status}}</td>
+      <td>{{ct.Date}}</td>
+    </tr>
+  </tbody>
+</table>
